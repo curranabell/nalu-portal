@@ -1,23 +1,32 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 
 import './Index.scss';
 
 const Index = () => (
-  <div className="Index">
-    <img
-      src="https://s3-us-west-2.amazonaws.com/cleverbeagle-assets/graphics/email-icon.png"
-      alt="Clever Beagle"
-    />
-    <h1>Pup</h1>
-    <p>A boilerplate for products.</p>
-    <div>
-      <Button href="http://cleverbeagle.com/pup">Read the Docs</Button>
-      <Button href="https://github.com/cleverbeagle/pup"><i className="fa fa-star" /> Star on GitHub</Button>
+  <div className="Home">
+    <div className="Header">
+      <h1>NALU CREATIVE PORTAL</h1>
     </div>
-    <footer>
-      <p>Need help and want to stay accountable building your product? <a href="http://cleverbeagle.com?utm_source=pupappindex&utm_campaign=oss">Check out Clever Beagle</a>.</p>
-    </footer>
+
+    <div className="HomeBoxes">
+      <Row>
+        <Col md={4}>
+          <h3>VIEW PROJECT PROGRESS</h3>
+          <Button bsStyle="info">GO</Button>
+        </Col>
+
+        <Col md ={4}>
+          <h3>VIEW CONTENT REQUESTS</h3>
+          <Button bsStyle="info">GO</Button>
+        </Col>
+
+        <Col md ={4}>
+          <h3>VIEW PROJECT CALENDAR</h3>
+          <Button bsStyle="info">GO</Button>
+        </Col>
+      </Row>
+    </div>
   </div>
 );
 
